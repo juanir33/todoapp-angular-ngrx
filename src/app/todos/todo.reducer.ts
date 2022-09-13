@@ -44,4 +44,8 @@ export const todoReducer = createReducer(
                 completed: true
             }}
             
-        );}))
+        );}),
+    on(actions.deleteAllTodoCompleted, (state) => {
+       return state.filter( todo => !todo.completed)
+    })
+)

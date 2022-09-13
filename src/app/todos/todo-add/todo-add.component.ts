@@ -12,7 +12,7 @@ import * as actions from '../todo.actions';
 export class TodoAddComponent implements OnInit {
   new_todo: FormControl;
   constructor( private store: Store<AppState> ) { 
-    this.new_todo = new FormControl('Hola', Validators.required);
+    this.new_todo = new FormControl('', Validators.required);
   }
 
   ngOnInit(): void {

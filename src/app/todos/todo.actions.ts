@@ -24,3 +24,7 @@ export const deleteTodo = createAction(
     '[TODO] delete',
     props<{_id: number}>()
 )
+
+export const deleteAllTodoCompleted = createAction(
+    '[TODO] deleteAll'
+)
